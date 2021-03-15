@@ -1,0 +1,10 @@
+../TP1/main.py
+../TP1/generales.py
+../TP1/merge.py
+../TP1/menu.py
+../TP1/desarrollo_autor.py
+../TP1/tabla.py
+../TP1/archivos.py
+../TP1/panelConsulta.py
+../TP1/panel_general.py
+../TP1/reutilizacion.py

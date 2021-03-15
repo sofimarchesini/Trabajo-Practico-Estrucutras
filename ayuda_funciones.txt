@@ -1,0 +1,438 @@
+-------------------------------------------------
+Función: acomodar_lectura
+Ayuda: Reemplaza en una lista todos sus elementos
+Parametros: (lista elementos_reemplazados reemplazo)
+Modulo: generales
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: analisis_linea
+Ayuda: Se le pasa una lista con las palabras encontradas y se fija si realmente 
+ alguna esta
+Parametros: (linea linea_comentarios linea_fuente palabras_buscadas 
+ palabras_faltantes)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: analizador_funcion
+Ayuda: Analizara la funcion para enviarla a las listas correspondientes
+Parametros: (linea_fuente linea_comentarios archivo)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: archivos
+Ayuda: Esta funcion inicia el proceso de archivos
+Parametros: ()
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: autor
+Ayuda: Indica el nombre del autor de la función
+Parametros: (lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: ayuda
+Ayuda: verifica si hay o no un comentario de ayuda dentro de la función
+Parametros: (lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: borrador
+Ayuda: N/N
+Parametros: ()
+Modulo: menu
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: buscar_dato
+Ayuda: Se le pasa una lista con datos a buscar en la linea del archivo
+Parametros: (lista_datos linea)
+Modulo: generales
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: buscar_funciones
+Ayuda: Va buscando en los archivos la funcion que necesito
+Parametros: (archivo funcion)
+Modulo: archivos
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: carga_informacion_desarrollador
+Ayuda: N/N
+Parametros: (dicc_desarrolladores total_lineas)
+Modulo: tabla
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: comentarios
+Ayuda: Este es el sector que corresponderia al analisis de la linea del 
+ archivo que corresponde a comentarios
+Parametros: (lectura lista_comentarios lista_fuente)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: contador
+Ayuda: Cuenta la cantidad de veces que aparece el elemento que se le le 
+ pasa por parametro
+Parametros: (elementos lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: crear_filas
+Ayuda: Empiezo la primera parte de crear la tabla
+Parametros: (invocaciones funciones total)
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
+-------------------------------------------------
+Función: crear_tabla
+Ayuda: Empiezo a crear la tabla
+Parametros: (invocaciones tabla funciones)
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
+-------------------------------------------------
+Función: eliminar_archivos
+Ayuda: Elimina archivos del directorio
+Parametros: (archivos)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: encontrar_palabras
+Ayuda: Encuentra las palabras autor o ayuda o le pone N/N para que se note 
+ la falta de un autor
+Parametros: (palabras linea_comentarios)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: extraigo_linea
+Ayuda: Analizara las lineas de la funcion y devolvera un dic modificado
+Parametros: (funcion key dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: formateo_linea
+Ayuda: Funcion que hace que cada linea no tenga mas de 80 caracteres
+Parametros: (lista)
+Modulo: archivos
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: formato_interrogacion
+Ayuda: Un formato visual para las opciones con interrogacion
+Parametros: (lista_funciones lista_comentarios)
+Modulo: tabla
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: formato_numeral
+Ayuda: Formato visual para las opciones numeral
+Parametros: (lista_funciones lista_comentarios)
+Modulo: tabla
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: funciones_invocadas
+Ayuda: esta funcion crea un diccionario con todas las funciones como 
+ claves. El diccionario tendra como valor como un diccionario 
+ compuesto por la funcion que invoco y el valor las veces invocada. 
+ Si no invoca ninguna funcion aparecera la lista vacia funcion1 
+ {funcion2 n veces} funcion 1 llama a funcion 2 n veces
+Parametros: (fuente)
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
+-------------------------------------------------
+Función: generar_archivo
+Ayuda: Genera un archivo a traves de un iterable y si lo necesitas te lo 
+ devuelve abierto
+Parametros: (lista ruta)
+Modulo: archivos
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: grabar_archivo
+Ayuda: Graba linea en un archivo pasado por parametro
+Parametros: (archivo leyenda)
+Modulo: archivos
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: guardar_archivo
+Ayuda: Lee archivo_aux.csv extrae la informacion y realiza la mezcla 
+ respectiva para luego eliminar archivo_aux.csv
+Parametros: (archivo_aux lista_archivos)
+Modulo: merge
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: imprimir_analizador
+Ayuda: imprimo la tabla y la copio al archivo analizador.txt
+Parametros: ()
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
+-------------------------------------------------
+Función: imprimir_panel
+Ayuda: Crea la una tabla
+Parametros: (dic)
+Modulo: tabla
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: imprimir_tabla_desarrollador
+Ayuda: Imprime la tabla para desarrollador
+Parametros: (participacion)
+Modulo: tabla
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: imprimir_todo
+Ayuda: imprime en un archivo .txt lo relacionado con la opcion ?
+Parametros: (archivo lista_funcion lista_comentarios)
+Modulo: tabla
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: indice_vaciado
+Ayuda: Esta funcion recibira una lista con datos que podra ir borrando 
+ y cuando este vacia devolvera el indice donde se vacio por completo. 
+
+Parametros: (lista_datos lista_borrar)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: info_desarrolladores
+Ayuda: nose
+Parametros: (fuente_unico comentarios)
+Modulo: desarrollo_autor
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: invocaciones
+Ayuda: Cuenta la cantidad de veces que fue invocada cada funcion
+Parametros: (lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: leer_archivos_csv
+Ayuda: leer archivos .csv y devuelve una lista de cada linea del archivo
+Parametros: (archivocsv)
+Modulo: desarrollo_autor
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: leer_linea
+Ayuda: lee una linea del archivo y devuelve una lista
+Parametros: (archivo)
+Modulo: archivos
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: leer_linea_clasico
+Ayuda: lee una linea del archivo y devuelve una tupla
+Parametros: (archivo corte)
+Modulo: archivos
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: lineas_coment
+Ayuda: cuenta las lineas de comentarios que no sean de autor o ayuda
+Parametros: (lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: lista_de_funciones
+Ayuda: Esta funcion crea una lista de funciones compuesta por los nombres 
+ de todas las funciones que se encuentran en el primer elemento 
+ de las lineas del archivo
+Parametros: ()
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
+-------------------------------------------------
+Función: listar_archivo
+Ayuda: convierte al archivo en una lista donde cada elemento es una linea del mismo
+Parametros: (archivo)
+Modulo: generales
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: main
+Ayuda: Funcion que arrancara el programa.
+Parametros: ()
+Modulo: main
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: menu
+Ayuda: Menu principal de nuestro programa
+Parametros: ()
+Modulo: menu
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: mezcla
+Ayuda: Mezcla Archivos CSV's
+Parametros: (lista_archivos)
+Modulo: merge
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: opcion_todo
+Ayuda: Funcion que imprime todo lo relacionado con las funciones ?todo 
+ '# 'todo e imprimir ?todo
+Parametros: (nombre archivo_funciones archivo_comentarios)
+Modulo: panelConsulta
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: opciones_funcion
+Ayuda: Segun la opcion que se elija se imprime diferente informacion 
+ sobre las funciones
+Parametros: (valor archivo_funciones archivo_comentarios)
+Modulo: panelConsulta
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: ordenamiento_insercion
+Ayuda: Algoritmo de ordenamiento por insercion visto en clase
+Parametros: (lista)
+Modulo: generales
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: organizar_archivo
+Ayuda: Crea un diccionario donde la calve es el nombre de la funcion que 
+ a su vez tiene un diccionario adentro donde las claves son los 
+ atributos de las columnas
+Parametros: (lista_ar)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: panel_consultas
+Ayuda: Funcion principal que pide el ingreso de una funcion y segun la 
+ opcion que elijas imprime diversas cosas
+Parametros: (fuente_unico comentarios)
+Modulo: panelConsulta
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: panel_csv
+Ayuda: Genera la escritura del archivo panel_general
+Parametros: (dic)
+Modulo: panel_general
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: panel_general
+Ayuda: ejecuta todo es el main del programa
+Parametros: (fuente_unico comentarios)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: parametros
+Ayuda: Cuenta la cantidad de parametros
+Parametros: (lista_ar dic)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: procesa_linea
+Ayuda: Funcion que graba la linea segun condiciones
+Parametros: (valor nombre if_elif archivo valor_final)
+Modulo: panel_general
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: proceso_archivos
+Ayuda: Va a validar las lineas del archivo para saber a cual de las dos 
+ salidas (comentarios y fuente unico) va a ir
+Parametros: (nombre_modulo archivo)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: reemplazar_string
+Ayuda: Con la funcion replace reemplazaremos los datos del parametro 
+ reemplazar con otro parametro reemplazo
+Parametros: (reemplazar reemplazo string)
+Modulo: generales
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: reunir_parametros
+Ayuda: Reune los parametros necesarios
+Parametros: (linea)
+Modulo: merge
+Autor: Nicolas
+-------------------------------------------------
+-------------------------------------------------
+Función: separador_archivos
+Ayuda: Esta función recibe una lista con comentarios y fuente divide 
+ en dos listas acorde al nombre respectivo
+Parametros: (lista_archivos)
+Modulo: merge
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: tabla_consultas
+Ayuda: Funcion que acumula nombres de funciones para luego dibujarlas en una tabla
+Parametros: (archivo)
+Modulo: tabla
+Autor: Juan Godoy
+-------------------------------------------------
+-------------------------------------------------
+Función: texto_menu
+Ayuda: N/N
+Parametros: ()
+Modulo: menu
+Autor: N/N
+-------------------------------------------------
+-------------------------------------------------
+Función: tipo_archivos
+Ayuda: valida si el archivo recibido es comentarios o fuente_unico
+Parametros: (archivo)
+Modulo: generales
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: unir
+Ayuda: Une todas las funciones contadoras con el diccionario
+Parametros: (dic lista_fu lista_com)
+Modulo: panel_general
+Autor: Lucia
+-------------------------------------------------
+-------------------------------------------------
+Función: validar_programa
+Ayuda: Preguntaremos si hay alguna ruta en programas.txt
+Parametros: ()
+Modulo: generales
+Autor: Alejandro
+-------------------------------------------------
+-------------------------------------------------
+Función: veces_invocadas
+Ayuda: esta funcion crea un dicionario compuesto por la clave como la 
+ funcion invocada y el valor como las veces que esta funcion fue 
+ invocada
+Parametros: (linea)
+Modulo: reutilizacion
+Autor: Sofia Marchesini
+-------------------------------------------------
